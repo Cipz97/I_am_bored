@@ -57,10 +57,10 @@
 		B3CFE8FC2728AFCB003564EF /* I_am_bored */ = {
 			isa = PBXGroup;
 			children = (
+				B3CFE8FD2728AFCB003564EF /* I_am_boredApp.swift */,
 				B3CFE9112728B083003564EF /* Utilities */,
 				B3CFE9102728B074003564EF /* ViewModels */,
 				B3CFE90D2728B058003564EF /* Models */,
-				B3CFE8FD2728AFCB003564EF /* I_am_boredApp.swift */,
 				B3CFE90B2728B01C003564EF /* Views */,
 				B3CFE9012728AFCC003564EF /* Assets.xcassets */,
 				B3CFE9032728AFCC003564EF /* Preview Content */,

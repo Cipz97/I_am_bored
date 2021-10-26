@@ -8,9 +8,7 @@
 import Foundation
 
 class NetworkManager {
-    
-    
-    
+    //fetches Network Data from BoredAPI with url passed in via ViewModel
     func performRequest(url: String, completion: @escaping(ActivityModel) -> Void) {
        
         guard let url = URL(string: url) else { return }
@@ -19,7 +17,7 @@ class NetworkManager {
             if let safeData = data {
                 if let decodedResponse = try? JSONDecoder().decode(ActivityModel.self, from: safeData) {
                     DispatchQueue.main.async {
-                        // updates activityModel with new data fetched from BoredAPI
+                        // completion handler which gets passed in on call updates ActivityModel with new Activity
                         completion(ActivityModel(activity: decodedResponse.activity))
                     }
                     return
