@@ -11,6 +11,9 @@
 		B3CFE9002728AFCB003564EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFE8FF2728AFCB003564EF /* ContentView.swift */; };
 		B3CFE9022728AFCC003564EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CFE9012728AFCC003564EF /* Assets.xcassets */; };
 		B3CFE9052728AFCC003564EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CFE9042728AFCC003564EF /* Preview Assets.xcassets */; };
+		B3CFE90F2728B06A003564EF /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFE90E2728B069003564EF /* ActivityModel.swift */; };
+		B3CFE9132728B095003564EF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFE9122728B095003564EF /* NetworkManager.swift */; };
+		B3CFE9152728B0A3003564EF /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CFE9142728B0A3003564EF /* ActivityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		B3CFE8FF2728AFCB003564EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3CFE9012728AFCC003564EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3CFE9042728AFCC003564EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3CFE90E2728B069003564EF /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		B3CFE9122728B095003564EF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B3CFE9142728B0A3003564EF /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		B3CFE8FC2728AFCB003564EF /* I_am_bored */ = {
 			isa = PBXGroup;
 			children = (
+				B3CFE9112728B083003564EF /* Utilities */,
+				B3CFE9102728B074003564EF /* ViewModels */,
+				B3CFE90D2728B058003564EF /* Models */,
 				B3CFE8FD2728AFCB003564EF /* I_am_boredApp.swift */,
-				B3CFE8FF2728AFCB003564EF /* ContentView.swift */,
+				B3CFE90B2728B01C003564EF /* Views */,
 				B3CFE9012728AFCC003564EF /* Assets.xcassets */,
 				B3CFE9032728AFCC003564EF /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				B3CFE9042728AFCC003564EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3CFE90B2728B01C003564EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFE8FF2728AFCB003564EF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3CFE90D2728B058003564EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFE90E2728B069003564EF /* ActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3CFE9102728B074003564EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFE9142728B0A3003564EF /* ActivityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B3CFE9112728B083003564EF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFE9122728B095003564EF /* NetworkManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CFE9152728B0A3003564EF /* ActivityViewModel.swift in Sources */,
+				B3CFE9132728B095003564EF /* NetworkManager.swift in Sources */,
 				B3CFE9002728AFCB003564EF /* ContentView.swift in Sources */,
 				B3CFE8FE2728AFCB003564EF /* I_am_boredApp.swift in Sources */,
+				B3CFE90F2728B06A003564EF /* ActivityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
